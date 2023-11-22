@@ -1,0 +1,28 @@
+goroutine adalah thread yang berjalan secara concurrent
+
+Dengan adanya goroutine kita bisa menjalankan code secara asynchronous
+
+Channel adalah tempat komunikasi secara synchronous yang bisa dilakukan oleh goroutine
+
+Terjadinya deadlock itu saat channel menerima data tetapi tidak ada yang mengirim data
+
+Channel in digunakan untuk mengirim data
+Channel out digunakan untuk menerima data
+
+Buffered Channel berguna untuk menampung data antrian di channel
+
+Looping range untuk channel berguna jika ada kasus sebuah channel dikirim data secara terus-menerus oleh pengirim dan tidak jelas kapan channel tersebut akan berhenti menerima data
+
+Select channel berguna untuk jika ingin menggunakan channel lebih dari 1
+
+Default select berguna untuk menunggu data yang sedang di proses
+
+Race condition itu adalah 1 variable yang dikerjakan banyak goroutine
+
+Mutex itu berguna untuk mengatasi masalah race condition, yang dimana mutex bisa melakukan lock dan unlock terhadap goroutine
+
+RWMutex itu berguna untuk mengatasi masalah race condition, yang dimana Mutex jenis ini memiliki dua lock, lock untuk Read dan lock untuk Write
+
+Once adalah fitur di yg bisa kita gunakan untuk memastikan bahwa sebuah function di eksekusi hanya sekali
+
+Pool itu digunakan untuk menyimpan data, selanjutnya untuk menggunakan datanya, kita bisa mengambil dari Pool, dan setelah selesai menggunakan datanya, kita bisa menyimpan kembali ke Pool nya
